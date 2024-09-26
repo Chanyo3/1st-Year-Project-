@@ -4,9 +4,43 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+class Student {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getIdNumber() {
+        return idNumber;
+    }
+
+    public void setIdNumber(String idNumber) {
+        this.idNumber = idNumber;
+    }
+
+    private String name;
+    private String age;
+    private String idNumber;
+    public Student(String name, String age, String idNUmber){
+        this.name = name;
+        this.age = age;
+        this.idNumber = idNUmber;
+    }
+}
 
 public class MainFunction{
-    public static void main(String[]args) {
+    public MainFunction(){
         JFrame frame = null;
         try {
             //Frame
@@ -158,6 +192,14 @@ public class MainFunction{
         } catch (Exception error) {
             JOptionPane.showMessageDialog(null, "Frame did not run");
             frame.dispose();
+        }
+    }
+    public static void main(String[]args) {
+        try{
+            new MainFunction();
+        }
+        catch(Exception error){
+            JOptionPane.showInputDialog("Error, run again");
         }
     }
 }
