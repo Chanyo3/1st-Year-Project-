@@ -199,7 +199,7 @@ public class MainFunction{
             new MainFunction();
         }
         catch(Exception error){
-            JOptionPane.showInputDialog("Error, run again");
+            JOptionPane.showMessageDialog("Error, run again");
         }
     }
 }
