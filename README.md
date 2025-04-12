@@ -1,4 +1,5 @@
 Student Info Manager – Java Swing Project
+
 📌 About
 This is a simple Java project created during my first year as a Computer Science student. It served as my summer learning initiative, combining what I learned in school with some self-taught concepts I explored online. The goal was to practice object-oriented programming and user interface development using Java Swing and AWT.
 
